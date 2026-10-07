@@ -20,7 +20,7 @@ jobs:
             cd ~/cicd-demo
             git pull origin main
             pip3 install --user -r requirements.txt
-           sudo systemctl restart cicd-demo
-	   sudo systemctl is-active --quiet cicd-demo
-           sleep 5
-           curl -f http://localhost:5000/health
+            sudo systemctl restart cicd-demo
+            sudo systemctl is-active --quiet cicd-demo
+            sleep 5
+            curl -f http://localhost:5000/health
